@@ -1,9 +1,9 @@
 {
   "name": "storeapi",
   "version": "1.0.0",
-  "description": "This is my StoreApi",
+  "description": "This is my Projectm",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "modemon index.js"
@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/Esuteru95/storeapi/issues"
   },
-  "homepage": "https://github.com/Esuteru95/storeapi#readme"
+  "homepage": "https://github.com/Esuteru95/storeapi#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
