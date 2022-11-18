@@ -1,0 +1,22 @@
+{
+  "name": "storeapi",
+  "version": "1.0.0",
+  "description": "This is my StoreApi",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "modemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esuteru95/storeapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esuteru95/storeapi/issues"
+  },
+  "homepage": "https://github.com/Esuteru95/storeapi#readme"
+}
