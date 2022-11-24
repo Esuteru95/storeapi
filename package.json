@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "modemon index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/Esuteru95/storeapi#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
+    "moment": "^2.29.4",
     "mysql2": "^2.3.3",
     "sequelize": "^6.25.6"
   },
