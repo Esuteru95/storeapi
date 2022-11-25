@@ -1,4 +1,4 @@
-import sequelize from 'sequelize';
+import sequelize, { Sequelize } from 'sequelize';
 import Database from '../database.js';
 const User = Database.define('user',{
     id:{
@@ -12,7 +12,8 @@ const User = Database.define('user',{
     lastname: sequelize.STRING, 
     email:{type:sequelize.STRING, allowNull:false},
     password:{type:sequelize.STRING, allowNull:false},
-    isApproved:{type:sequelize.BOOLEAN}
+    isApproved:{type:sequelize.BOOLEAN},
+    passcode: sequelize.INTEGER
 })
 
 export default User;
