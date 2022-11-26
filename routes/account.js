@@ -88,7 +88,7 @@ router.post('/create_new_account',async(req,res)=>{
   })
 
 
- //LOGIN 25.11
+ //LOGIN 25.11 (להמשיך אחרי שיתקנו מודל)
  router.post('/login',async(req,res)=>{
         //Get data
         const {email, password}=req.body;
@@ -117,10 +117,6 @@ router.post('/create_new_account',async(req,res)=>{
                  }
             }
            })
-        //Check password
-        //Check if account verified
-        //Create Token
-        //Response
  })
 
 
