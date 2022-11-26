@@ -89,14 +89,39 @@ router.post('/create_new_account',async(req,res)=>{
 
 
  //LOGIN 25.11
-// router.post('/login',async(req,res)=>{
+ router.post('/login',async(req,res)=>{
         //Get data
+        const {email, password}=req.body;
         //Check if exist
+        Account.findAll({where:{email:email}})
+        .then(async account=>{
+            if(account.length>0){
+                 const user = account[0];
+                 //Check pass
+                 const isMatch = await bcryptjs.compire({password:user.password});
+                 if(isMatch)
+                 {
+                 //Check if account verified
+                 if(user.isApproved)
+                 {
+                    //Create_Token
+                    const data={
+                        id:user.id,
+                        name:user.firstname+' '+user.lastname,
+                        email:user.email
+                    }
+                    //לראות בזום איפה לוקחים מפתח
+                    const token=await jwt.sign({data},'DfGry345GF56OOFr0');
+                    return res.status(200).json
+                 }
+                 }
+            }
+           })
         //Check password
         //Check if account verified
         //Create Token
         //Response
-// })
+ })
 
 
 //GET ALL ACCOUNTS 18.11
