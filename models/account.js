@@ -1,8 +1,9 @@
-import sequelize, { Sequelize } from 'sequelize';
+import sequelize from 'sequelize';
 import Database from '../database.js';
+
 const User = Database.define('user',{
     id:{
-        //כאשר יש יותר מפרמטר אחד בונים אובייקט
+        //כאשר יש יותר מפרמטר אחד בונים   אובייקט
         type:sequelize.INTEGER,
         autoIncrement: true,
         allowNull:false,
